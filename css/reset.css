@@ -1,0 +1,74 @@
+/* reset.css
+   Based on Andy Bell's modern CSS reset
+   https://github.com/andy-bell/modern-css-reset
+*/
+
+/* Box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+* {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol */
+ul[role='list'], ol[role='list'] {
+  list-style: none;
+}
+
+/* Core defaults */
+html, body {
+  height: 100%;
+}
+
+/* Improve media defaults */
+img, picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for form elements */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Remove animations/transitions for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove default link styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Page defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Make buttons explicit */
+button, [role="button"] {
+  cursor: pointer;
+}
