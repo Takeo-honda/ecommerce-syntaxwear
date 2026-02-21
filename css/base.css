@@ -2,3 +2,7 @@
     BASE.CSS
     Reset, tipografia global, variáveis/tokens, utilitários
 */
+
+body{
+    font-family: var(--fonte-principal);
+}
