@@ -1,16 +1,11 @@
-/* 
-    BASE.CSS
-    Reset, tipografia global, variáveis/tokens, utilitários
-*/
-
+/* base.css */
 body{
     font-family: var(--fonte-principal);
-    background-color:#ffffff;
     color: #333333;
 }
 
 main{
-    padding: 2.5rem 0 0;
+    padding: 2.5rem 0 2.5rem;
     max-width: 1360px;
     margin: 0 auto;
 }
@@ -23,23 +18,28 @@ main{
     color: #ffffff;
     font-weight: 400;
     padding: 10px 20px;
-    transition: background-color 0.3s border 0.3s;
- }  
+    transition: backgound-color 0.3s, border 0.3s;
+}
 
- .btn-outline{
-     background-color: transparent;
+.btn-outline{
+    background-color: transparent;
     border: 2px solid #ffffff;
     line-height: 23px;
- }
- .btn-filled{
-     background-color: #ffffff;
-     color: #6329a2;
-     border: none;
-     margin-left: 1rem;
- }
+}
 
- .btn:hover{
-     background-color: #6329a2;
-     color: #ffffff;
-     border-color: #6329a2;
- }
+.btn-filled{
+    background-color: #ffffff;
+    color: #6329A2;
+}
+
+.btn:hover{
+    background-color: #6329A2;
+    color: #ffffff;
+    border-color: #6329A2;
+}
+
+.footer-copy{
+    font-size: 1.25rem;
+    text-align: center;
+    padding: 20px 0;
+}
